@@ -5,37 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site Phase 2</title>
+    <meta name="description" content="Mon premier site HTML CSS">
+    <meta name="keywords" content="HTML, CSS, site HTML CSS">
+    <title>Site Phase 2 - Liste</title>
+
+    <!-- lien vers le kit de fontawesome -->
+    <script src="https://kit.fontawesome.com/47c3463c0f.js" crossorigin="anonymous"></script>
+
+    <!-- lien des typos en CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
+<!-- corps du document -->
+
 <body>
+    <!-- zone haute de la page -->
     <header>
-        <h1>Mon premier site en HTML/CSS</h1>
-
-        <nav>
-            <a href="structure.html">Structure</a>
-            <a href="texte.html">Texte</a>
-            <a href="selecteur.html">Sélecteur</a>
-            <a href="image.html">Image</a>
-            <a href="position.html">Position</a>
-            <a href="zoning.html">Zoning</a>
-            <a href="tableau.html">Tableau</a>
-            <a href="liste.html">Liste</a>
-            <a href="lien_menu.html">Lien & menu</a>
-            <a href="formulaire.html">Formulaire</a>
-            <a href="multimedia.html">Multimédia</a>
-            <a href="animation.html">Animation</a>
-        </nav>
+        <!-- la div pour le logo -->
+        <div id="logo">
+            <!-- ancre du haut de la page -->
+            <a href="#logo">
+                <!-- lien sur un bouton pour remonter en haut de la page, le bouton sera affiché en bas de la page (évidemment) grâce au CSS -->
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button></a>
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
+        </div>
+        <!-- la div pour le titre du site -->
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <!-- la div des liens vers les réseaux sociaux -->
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- je rétablis le flux -->
+        <div class="clear"></div>
     </header>
+    <!-- zone du menu, les liens pour naviguer sur le site -->
+    <nav>
+        <a href="../index.html" title="Site Phase 2 - Accueil">Structure</a>
+        <a href="texte.html" title="Site Phase 2 - Texte">Texte</a>
+        <a href="selecteur.html" title="Site Phase 2 - Sélecteur">Sélecteur</a>
+        <a href="image.html" title="Site Phase 2 - Image">Image</a>
+        <a href="position.html" title="Site Phase 2 - Position">Position</a>
+        <a href="zoning.html" title="Site Phase 2 - Zoning">Zoning</a>
+        <a href="tableau.html" title="Site Phase 2 - Tableau">Tableau</a>
+        <a href="liste.html" title="Site Phase 2 - Liste"  class="active">Liste</a>
+        <a href="lien_menu.html" title="Site Phase 2 - Lien & menu">Lien & menu</a>
+        <a href="formulaire.html" title="Site Phase 2 - Formulaire">Formulaire</a>
+        <a href="multimedia.html" title="Site Phase 2 - Multimédia">Multimédia</a>
+        <a href="animation.html" title="Site Phase 2 - Animation">Animation</a>
+    </nav>
 
+    <!-- contenu principal -->
     <main>
-
 
     </main>
 
-
+    <!-- pied de page -->
     <footer>
-
+        <p><i class="fas fa-shoe-prints"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
     </footer>
 </body>
 
