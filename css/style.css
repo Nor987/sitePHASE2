@@ -1,7 +1,4 @@
-@charset "utf-8";
-
-/* feuille de style du site phase 2 WebForce 3 */
-/* typos utilisées dans ceette feuille de style Oswald, Lemonada et Anton */
+/* feuille de style du site phase 2 */
 
 body {
     background-image: url(../img/concrete-texture.png);
@@ -191,8 +188,255 @@ footer {
     height: 500px;
 }
 
+/* Le zoning 3  */
+#zoning3 {
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    /* border: 10px solid red; */
+}
+
+#zoning3  section {
+    height: 525px;
+    float: left;
+    width: 50%;
+    background: #205d67;
+    margin: 0;
+    padding: 0;
+    /* border: 10px solid #fff; */
+}
+
+#zoning3 footer {
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: #d8ebb5;
+    color: black;
+}
+
+/* le zoning 4 */
+#zoning4 {
+    background: #fff;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    border: 2px dotted red;
+}
+
+#zoning4 header {
+    height: 100px;
+    background: #10828c;
+}
+
+#zoning4 nav {
+    height: 50px;
+    background: #bed4e2;
+    border: none;
+}
+
+#zoning4 section {
+    height: 200px;
+    background: red;
+    border: 2px dotted black;
+}
+
+#zoning4 footer {
+    height: 100px;
+    background:#6acafc;
+}
+
+/* le zoning 5  */
+#zoning5 {
+    background: #ecebe9;
+    border: 2px solid black;
+}
+
+#zoning5 header {
+    background: #F8D771;
+    height: 100px;    
+}
+
+#zoning5 nav {
+    background: cadetblue;
+    height: 50px;
+    border: none;       
+}
+
+#zoning5 .section {
+    padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    float: left;
+    width: 50%;
+    height: 250px; 
+}
+
+#zoning5 .z1, .z4 {
+    background: #F8D771;    
+}
+
+#zoning5 .z2, .z3 {
+    background: #fce38a;    
+}
+
+#zoning5 footer {
+    background: red;
+    height: 90px;
+}
+
+/* le zoning 6  */
+#zoning6 {
+    width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+#zoning6 header {
+    background: #40a497;
+    height: 180px;
+}
+
+.haut1  {
+    background: #203562;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.haut2 {
+    background: #3e588f;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.haut3 {
+    background: #203562;    
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+
+#zoning6 nav {
+    background: #0B5269;
+    height: 80px;
+    border: none;
+}
+
+#zoning6 aside {
+    background: #446878;
+    float: left;
+    width: 25%;
+    height: 650px;
+}
+
+.slideshow {
+    background: #314a52;
+    height: 250px;
+}
+
+#zoning6 .a {
+    background: #c0c5cd;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+
+#zoning6 .b {
+    background: #203562;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+
+#zoning6 section {
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}
+#zoning6 .c, .e {
+    background: #c0c5cd;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning6 .d, .f {
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning6 footer {
+    background: #0B5269;
+}
+
 /************************* FLOAT *************************/
 
 .clear {
     clear: both;
+}
+
+/************************* LA PAGE TEXTE *************************/
+.oswald p {
+    font-family: 'Oswald', sans-serif;
+}
+
+/************************* LA PAGE SELECTEUR *************************/
+.select p {
+    color: red;
+}
+
+.select p:first-of-type {
+    color: pink;
+}
+
+.select p:last-of-type {
+    color: pink;
+}
+
+.select p:nth-of-type(5), .select p:nth-of-type(6) {
+    color:black;
+}
+
+.select div:not(.zoneB) {
+    font-weight: bold;
+}
+
+.select .zoneA {
+    color: #f56f56;
+}
+
+.select .zoneB {
+    color: #996633;
+}
+
+.select .zoneB .couleurBleu {
+    color: blue;
+    font-size: 16px;
+}
+
+.select #zoneC {
+    color: #98f32f;
+}
+
+.select #zoneD span {
+    color: #32ff32;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/************************* LA PAGE SELECTEUR *************************/
+.imageFond {
+    background: url(../img/fond.jpg) no-repeat;
+}
+.imageFond p {
+    
 }
