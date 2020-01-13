@@ -11,49 +11,93 @@
     <style>
 
         body {
-            background-color: #ffd6d6;
-            width: 1080px;
-            margin: auto;
+            background-image: url(../img/gaming-pattern.png);
+            margin-top: 15px;
+            margin-bottom: 15px;
             text-align: center;
             color: #fff;
         }
 
+        #conteneur {
+            /* background: #fff; */
+            /* width: 90%; */
+            width: 1000px;
+            margin: 0 auto;
+        }
+
         header {
-            background-color: red;
-            height: 70px;
+            height: 300px;
+            background: url(../img/dolomites-italie.jpg) no-repeat;
+            background-position: center;
+            background-position: top;
+            background-size: cover;
+            margin-bottom: 20px;
         }
 
         aside {
-            background-color: #6acafc;
+            background-color: #76aa81;
             float: left;
             width: 20%;
-            height: 500px;
+            /* width: 200px; */
+            min-height: 500px;
         }
 
         .milieu {
-            background-color: orange;
+            background-color: rgba(73, 147, 182, 0.363);
             float: left;
             width: 60%;
-            height: 500px;
+            /* width: 600px; */
+            min-height: 500px;
         }
+
+        footer {
+            background: #5768b4;
+            height: 75px;
+        }
+
+        figcaption {
+            color: #fff;
+            background: grey;
+            width: 502px;
+            margin: 0 auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
     </style>
 
 </head>
+
 <body>
-    
+    <div id="conteneur">
             <header>
                 <p>Ici le header</p>
             </header>
             <aside>
                 <p>Zone de gauche</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sint, obcaecati iste itaque neque libero aspernatur est nostrum unde quis iusto voluptatibus expedita excepturi nulla? Repudiandae similique possimus atque magnam!</p>
+                <p>Accusantium earum odit rerum, facilis, hic sunt aperiam modi qui voluptates voluptas neque blanditiis voluptate quaerat nesciunt odio. Laboriosam eius quibusdam ullam dolorum fugit facilis aspernatur voluptates iste, hic assumenda.</p>
+                <p>Dolores sequi, impedit accusamus soluta voluptatibus esse perspiciatis omnis alias cum officia debitis voluptatum suscipit quis enim ut quo itaque? Cupiditate rerum aperiam sequi animi impedit tempora explicabo illo ipsa.</p>
+                <p>Ut quisquam nam, mollitia, voluptas quo sequi consectetur voluptatibus, eos beatae earum quas autem in expedita culpa dolor placeat. Atque, maiores laboriosam ea repudiandae quidem facilis molestias eum in deserunt?</p>
             </aside>
             <div class="milieu">
                 <p>Zone du milieu</p>
+                <figure>
+                    <img src="../img/fond.jpg" alt="Montagne" width="502px" height="325px">
+                    <figcaption>La montagne</figcaption>
+                </figure>
             </div>
             <aside>
                 <p>Zone de droite</p>
             </aside>
             <div class="clear"></div>
+            <footer>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error officia animi, magnam voluptas amet enim hic ipsam iusto, quos non et nesciunt! Iusto eos consectetur maiores sequi placeat natus provident.</p>
+            </footer>
+    </div>
     
 </body>
+
 </html>
