@@ -1,0 +1,70 @@
+/* feuille de style pour le zoning 8  */
+
+/* solution 1 sans .clear dans le HTML */
+
+body {
+    background: #f4efd3;
+}
+
+#conteneur {
+    width: 800px;
+    height: 600px;
+    background: #6c5b7b;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: #5d5b6a;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+
+}
+
+.gauche, .droite {
+    background: #758184;
+    width: 150px;
+    height: 500px;
+    float: left;
+    line-height: 500px;
+}
+
+.milieu {
+    background: #6c7b95;
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.zone1, .zone2, .zone3, .zone4, .zone5 {
+    /* avec .bas, ces 5 éléments sont les enfants de .milieu */
+    background: #f4f4f4;
+    height: 500px;
+    width: 100px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.bas {
+    background: #293462;
+    height: 50px;
+    /* .bas est l'enfant de l'élément .milieu et il a une position relative à son parent */
+    position: relative;
+    right: 0;
+    /* .bas est positionné à 450px du haut de la zone de l'élément .milieu */
+    top: 450px;
+    /* bottom: 0; */
+}
+
+.bas p {
+    line-height: 50px;
+    /* le p est absolue par rapport à son parent .bas (et non pas par rapport à l'ancêtre car .bas est relatif) */
+    position: absolute;
+    left: 200px;
+}
+
+.clear {
+    clear: both;
+}
